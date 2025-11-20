@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elanor - Products</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fefbf5; 
+            color: #333;
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #e6f0ff; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #7f5a41; 
+            font-family: cursive;
+
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #7f5a41;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #a67c52;
+        }
+
+       
+        .page-title {
+            text-align: center;
+            font-size: 40px;
+            margin: 50px 0 30px;
+            color: #7f5a41;
+        }
+
+        
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px 50px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .product-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #7f5a41;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .product-card button {
+            padding: 10px 20px;
+            background-color: #7f5a41;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #a67c52;
+            transform: scale(1.05);
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #e6f0ff;
+            color: #7f5a41;
+            font-weight: bold;
+        }
+
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        
+        @media (max-width: 768px) {
+            .product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">Elanor</div>
+        <nav>
+            <ul>
+                <li><a href="file.html">Home</a></li>
+                <li><a href="file2.html">Products</a></li>
+                <li><a href="file3.html">Brands</a></li>
+                <li><a href="#">Men's Corner</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <h1 class="page-title">Our Collection</h1>
+
+    <!-- Products Listing -->
+    <section class="product-grid">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/47/a4/77/47a477ee14ce8757f701c507521d2971.jpg" alt="Lip Gloss">
+            <h3> Lip Gloss</h3>
+            <p>₹199</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/47/c9/e7/47c9e776d825fe64c40fff1ffeddb96f.jpg" alt="Face Serum">
+            <h3>Face Serum</h3>
+            <p>₹299</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/32/27/02/322702ab492569cd3b4bd0c5d4652d5d.jpg" alt="Blush">
+            <h3> Blush</h3>
+            <p>₹399</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/c0/98/0b/c0980b77d35b79ac6486772edd8216b3.jpg" alt="Shampoo">
+            <h3> Shampoo</h3>
+            <p>₹399</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/57/00/b4/5700b45f2802f798e73d34004bf2245c.jpg" alt="Perfume">
+            <h3> Perfume</h3>
+            <p>₹599</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/c1/7b/dc/c17bdccd11057814b3313ea826004d1f.jpg" alt="Face Cream">
+            <h3>Hydrating Face Cream</h3>
+            <p>₹250</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/c2/6b/bf/c26bbfc7498ba59e0f7207c9e6631aa1.jpg" alt="Foundation">
+            <h3>Foundation</h3>
+            <p>₹699</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/6c/14/0e/6c140e2704a1993c1488519d28756adc.jpg" alt="Eye Shadow">
+            <h3> Eye Shadow</h3>
+            <p>₹449</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/94/5e/22/945e22c0179ebfdda5d48e07d41b7eea.jpg" alt="Nail Polish">
+            <h3>Pastel Nail Polish</h3>
+            <p>₹299</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/fd/ec/22/fdec22bf3690574b6629fe656d674bb4.jpg" alt="Body Lotion">
+            <h3>Moisturizing Lotion</h3>
+            <p>₹399</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/4d/ae/9d/4dae9de3f44d4ca5d0aefd8f6ee845ab.jpg" alt="Hair Oil">
+            <h3>Hair Oil</h3>
+            <p>₹149</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/0f/e9/d8/0fe9d8b85bc5a80e58966588c301d9e8.jpg" alt="Sunscreen">
+            <h3> Sunscreen</h3>
+            <p>₹249</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- 6 More Products -->
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/5b/14/b0/5b14b06658acbb88b888d984173840e0.jpg" alt="Scrub">
+            <h3>Scrub</h3>
+            <p>₹249</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/b8/f9/78/b8f9780e32eda607b38ae43197aba880.jpg" alt="Face Wash">
+            <h3> Face Wash</h3>
+            <p>₹199</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/8b/57/f5/8b57f59bbffa020416aa778526df535e.jpg" alt="Body wash">
+            <h3>Body Wash</h3>
+            <p>₹299</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/82/77/ba/8277baee5b03605790da3c82ff504022.jpg" alt="Sheet Masks">
+            <h3>Sheet Masks</h3>
+            <p>₹99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/c6/1c/1c/c61c1cdcc17474b2c9299acd85ff1b2a.jpg" alt="Hair Mask">
+            <h3>Hair Mask</h3>
+            <p>₹399</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/2c/03/29/2c032965805db8552e0fe651d2f6eae8.jpg" alt="Mascarra">
+            <h3>Mascara and Eyeliner</h3>
+            <p>₹499</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2025 Elanor. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

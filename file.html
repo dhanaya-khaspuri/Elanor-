@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elanor - Home</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fefbf5; 
+            color: #333;
+        }
+
+      
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #e6f0ff; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #7f5a41;
+            font-family: cursive; 
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #7f5a41;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #a67c52;
+        }
+
+      
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #fdf7f0, #e6f0ff);
+            gap: 30px;
+        }
+
+        .hero-text {
+            max-width: 500px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #7f5a41;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .hero-btn {
+            padding: 12px 30px;
+            background-color: #7f5a41;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: #a67c52;
+            transform: scale(1.05);
+        }
+
+        .hero-media video {
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin: 40px 0 25px;
+            color: #7f5a41;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px 50px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .product-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #7f5a41;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .product-card button {
+            padding: 10px 20px;
+            background-color: #7f5a41;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #a67c52;
+            transform: scale(1.05);
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #e6f0ff;
+            color: #7f5a41;
+            font-weight: bold;
+        }
+
+       
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <div class="logo">Elanor</div>
+        <nav>
+            <ul>
+                <li><a href="file.html">Home</a></li>
+                <li><a href="file2.html" target="_blank">Products</a></li>
+                <li><a href="file3.html">Brands</a></li>
+                <li><a href="#">Men's Corner</a></li>
+                <li><a href="#">Offers</a></li>
+                
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Glow Like Never Before</h1>
+            <p>Discover premium beauty products with a warm, luxurious touch.</p>
+            <a href="file2.html" class="hero-btn">Shop Now</a>
+        </div>
+        <div class="hero-media">
+            <video src="https://media.istockphoto.com/id/1446438792/video/interior-of-large-cosmetic-supermarket-selling-beautycare-products.mp4?s=mp4-640x640-is&k=20&c=QMuHPgw5jntRNZb01cgLzgn7ZMzlP8CcT_y6_gvTbgQ=" autoplay muted loop></video>
+        </div>
+    </section>
+
+    
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://i.pinimg.com/1200x/a4/b1/93/a4b1932c6e936996159b28b762622245.jpg" alt="Lipstick">
+                <h3>Matte Lipstick</h3>
+                <p>₹599</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/1200x/70/ed/22/70ed2270625e229e3f6433d311ff9b68.jpg" alt="Face Cream">
+                <h3>Hydrating Face Cream</h3>
+                <p>₹899</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/f6/10/f3/f610f3d48d83c6dc73d4f7be96a7a95d.jpg" alt="Perfume">
+                <h3>Luxury Perfume</h3>
+                <p>₹1299</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2025 Elanor. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
