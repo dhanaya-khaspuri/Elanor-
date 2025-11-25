@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elanor - Brands</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fefbf5; 
+            color: #333;
+        }
+
+       
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #e6f0ff; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #7f5a41;
+            font-family: cursive; 
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #7f5a41;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #a67c52;
+        }
+
+        
+        .title {
+            text-align: center;
+            font-size: 40px;
+            margin: 50px 0 30px;
+            color: #7f5a41;
+        }
+
+        
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px 50px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .card img:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #7f5a41;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #e6f0ff;
+            color: #7f5a41;
+            font-weight: bold;
+        }
+
+       
+        @media (max-width: 768px) {
+            .brands-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">Elanor</div>
+        <nav>
+            <ul>
+                <li><a href="file.html">Home</a></li>
+                <li><a href="file2.html">Products</a></li>
+                <li><a href="file3.html">Brands</a></li>
+                <li><a href="file4.html">Men's Corner</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <h1 class="title">Top Brands</h1>
+
+
+    <section class="grid">
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/b6/81/66/b68166cf475aa56e31abe8bc45fcb6da.jpg" alt="Nykaa">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/3d/36/c4/3d36c4b13e125ae1bbb4f818ab2c3e80.jpg" alt="Loreal">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/49/88/35/4988351a1476d530d0c2defb1f194c15.jpg" alt="Maybelline">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/67/d0/6b/67d06b4f2ba472704249e32fa6f0e996.jpg" alt="Rare Beauty">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/cc/38/84/cc3884703e0334fb51ffa901a3ef6652.jpg" alt="Clinique">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/aa/37/80/aa3780a243c6317f45ad1281e168410f.jpg" alt="Mama Earth">
+            
+        </div>
+         <div class="card">
+            <img src="https://i.pinimg.com/1200x/4b/c7/1b/4bc71be1e103635a2f5d1ca0299e42a8.jpg" alt="Cetaphil">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/ed/bb/3a/edbb3a70870654a390fd6a5f633eba96.jpg" alt="Sugar Beauty">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/55/90/0b/55900beeff90476e34df8f7303a060e3.jpg" alt="Lakme">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/8d/6d/10/8d6d10573834f788d279db27adfbebe0.jpg" alt="Forest Essentials">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/e9/8f/5d/e98f5dd2950f59891691cde4aecba89d.jpg" alt="Dot and Key">
+            
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/93/b4/bd/93b4bd88ad8a1e2ce220e77040dab63b.jpg" alt="Pilgrim">
+            
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2025 Elanor. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

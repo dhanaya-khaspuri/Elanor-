@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elanor - Men's Corner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fefbf5; 
+            color: #333;
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #e6f0ff; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #7f5a41; 
+            font-family: cursive;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #7f5a41;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #a67c52;
+        }
+
+        
+        .title {
+            text-align: center;
+            font-size: 40px;
+            margin: 50px 0 30px;
+            color: #7f5a41;
+        }
+
+        
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px 50px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .card img:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #7f5a41;
+        }
+
+        .card p {
+            font-weight: bold;
+            color: #5b7fa3;
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background-color: #7f5a41;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #a67c52;
+            transform: scale(1.05);
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #e6f0ff;
+            color: #7f5a41;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .products-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">Elanor</div>
+        <nav>
+            <ul>
+                <li><a href="file.html">Home</a></li>
+                <li><a href="file2.html">Products</a></li>
+                <li><a href="file3.html">Brands</a></li>
+                <li><a href="file4.html">Men's Corner</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <h1 class="title">Men's Corner</h1>
+
+    
+    <section class="grid">
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/ea/88/49/ea88498944a03032d13bdd38714a7dc8.jpg" alt="Men Face Wash">
+            <h3>Men's Face Wash</h3>
+            <p>₹349</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/92/e0/ec/92e0ecf44d8dd1106f41ae73cc0584b8.jpg" alt="Beard Oil">
+            <h3>Beard Oil</h3>
+            <p>₹499</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/dc/79/f8/dc79f81f063dbe58500ea1a2712b5a54.jpg" alt="Men Perfume">
+            <h3>Men's Perfume</h3>
+            <p>₹899</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/b5/61/3e/b5613ec5c03d5e286d546264ae049c6e.jpg" alt="Hair Wax">
+            <h3>Hair Wax</h3>
+            <p>₹399</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/b0/c7/57/b0c757e25adbc2fbdf74aecea78eae8f.jpg" alt="Shaving Cream">
+            <h3>Shaving Cream</h3>
+            <p>₹199</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/23/8b/f3/238bf3e8e226793b27d05acc9f9b780d.jpg" alt="Deodorant">
+            <h3>Deodorant</h3>
+            <p>₹279</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/e9/b9/f4/e9b9f4ae4d8589829e4c731929fb50ae.jpg" alt="Moisturizer">
+            <h3>Moisturizer</h3>
+            <p>₹399</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/e2/88/d8/e288d80bfb50b39138a75f1a7067f9e3.jpg" alt="Hair Serum">
+            <h3>Hair Serum</h3>
+            <p>₹549</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/7d/d3/76/7dd37630005cb190168b27f43788e5b2.jpg" alt="Beard Comb">
+            <h3>Beard Comb Set</h3>
+            <p>₹249</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/c8/cf/ae/c8cfae4853f47e9355bd88911623f4b2.jpg" alt="Hair Mask">
+            <h3>Hair Mask</h3>
+            <p>₹699</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/cd/fe/2f/cdfe2f028ac6f13a1212aefaf2b09c4e.jpg" alt="Face Scrub">
+            <h3>Face Scrub</h3>
+            <p>₹299</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/07/cd/6d/07cd6d5291a96171682310290d02b466.jpg" alt="Fitness and Wellness">
+            <h3>Fitness and Wellness</h3>
+            <p>₹1499</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    
+    <footer>
+        &copy; 2025 Elanor. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
